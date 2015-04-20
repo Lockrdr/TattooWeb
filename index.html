@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Tinta de Pulpo</title>
+</head>
+<style type="text/css">
+
+body{
+
+	background-color: silver
+}
+
+#ContenedorExterior{
+	border:3px solid black;
+	width:600;
+	height:660;
+	background-color:#162EAE;
+	margin: 0 auto;
+}
+#TituloPrincipal{
+	text-align: center;
+	 font-size: 250%
+
+}
+
+#contenedorPrincipal {
+
+background-color:silver;
+ width: 1080px;
+height: 700px
+
+}
+#marcoSuperior{
+border:2px solid black
+;height: 100px;
+ background-color:#485ED7
+
+}
+#ContenedorDeSecciones{
+border:2px solid black;width: 150px; height: 400px; background-color:#485ED7; float: left
+
+}
+#ContenedorTexto{
+
+	color: #FFFFFF;
+	 background-color:#001457;
+	 font-size:20px
+}
+#ContenedorInferior{
+background-color:black;
+
+height: 100px
+
+}
+
+
+
+</style>
+<script type="text/javascript" src="jquery-1.11.2.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	console.log("cargado js");
+});
+
+
+</script>
+
+<body>
+
+
+
+<div id = "contenedorPrincipal">
+
+	<div id = "marcoSuperior">
+		
+		<h1 id ="TituloPrincipal">Tinta de Pulpo</h1>
+		
+	</div>
+	
+	<div id ="ContenedorDeSecciones">
+
+		<br><br>
+		<a href="#S1"><font size = 6> Formacion academica </font></a>
+		<br><br>
+		<a href="#S2"><font size = 6> Hobbies </font></a>
+		<br><br>
+		<a href="#S3"><font size = 6> Prácticas </font></a>
+		<br><br>
+		
+	</div>
+	
+	<div id = "ContenedorTexto" >
+	
+		<!--Esta sección describe la formación academica de Ricardo-->
+
+		<h2><a id="S1" style="color: #FF9400">Formación academica</a><a href="Documentos/MatriculaRicardo.pdf"> (Matricula) </a></h2>
+			
+		<h3><u>2011-2013 Ingenería del Software</u></h3>
+		<p>
+			Universidad Complutense de Madrid<br>
+			Actualmente en el tercer año de estudio<br>
+			Prácticas realizadas durante el curso:
+			<br><br>
+			Creación de programas de gestión de información (utilizando modelos de procesos para el desarrollo).
+			Programa recreativos (Sudoku digital, simulador de guitarra, etc…)<br>
+			Creación de páginas webs<br>
+			Creación aplicaciones para móviles (Android)<br>
+		</p>
+		<h3><u>2009-2011 Bachillerato</u></h3>
+		<p>
+			Colegios Ramón Y Cajal (Madrid)
+			Bachillerato Ciencias y Tecnología
+		
+	
+	
+	</div>
+	<div id = "ContenedorInferior">
+
+	</div>
+	
+</div>
+</body>
+</html>
