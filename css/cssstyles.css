@@ -126,30 +126,80 @@ font-size: 300%;
    background-color:#001457;
    font-size:20px
 }
-#ContenedorInferior{
-background-color:black;
- position:absolute;
+#footer{
+background-color:blue;
+ position:fixed;
    bottom:0;
    text-align: right;
    color:white;
    font-size: 300%;
-
+background-attachment: scroll;
 width: 100%;
+ background-position: 0% 0%;
+height: 100px;
+bottom: 0pt;
+left: 0pt;
+}
 
-height: 100px
+#footer_contents{
 
+ 		height:24px; // Replace with the height your footer should be
+        width: 100%; // Visible width of footer
+        margin:auto;
 }
 #contenedorIntroduccion
 {
 	background-color:blue;
+text-align: center;
 	color: white;
-	float:left;
+	float: center;
 	
 	
 }
-#contenedorEjemplos{
-	height: 300px;
-	width: 100%;
-	background-color: silver;
 
+.contenedorEjemplos { width:fill;
+	height: 400px;
+	width: 100%;
+	background-color: silver; }
+.ltcol, .ctcol, .rtcol {height:100%; width: fill; margin: 10px; padding:10px; }
+.ltcol, .ctcol { float:left; }
+.rtcol { float:right; }
+
+.ltcol { background: red }
+.ctcol  { background: blue}
+.rtcol { background: green}
+
+td{
+	background-color: red;
+	height: 100%;
+	width:250px;
+}
+
+.tituloEjemplo{
+	text-align: center;
+	background-color: green;
+	width:250px;
+	font-size: 55px
+
+
+}
+.imagenEjemplo
+{
+	max-height:600px;
+	max-width: 200px;
+	min-height: 300px;
+
+	padding: 50px;
+}
+.parrafoEjemplo{
+
+	font-size: 20px;
+
+	color:silver;
+
+
+}
+.contenedorEjemplos{
+
+	width: 100%;
 }
