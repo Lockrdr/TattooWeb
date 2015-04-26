@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Octopus Ink</title>
+</head>
+<link rel="stylesheet" href="css/cssstyles.css">
+
+<script type="text/javascript" src="lib/jquery-1.11.2.js"></script>
+
+<body>
+	
+	<div id = "contenedorPrincipal">
+
+
+		<div id = "marcoSuperior">
+
+			<h1 id ="TituloPrincipal">Octopus Ink</h1>
+
+		</div>
+		<div id ="ContenedorDeSecciones">
+
+			<a href="index.html"> Home</a>
+			
+			<a href="horarios.html"> Horarios</a>
+			
+			<a href="concursoFormulario.html"> Inscribirse a concurso</a>
+			<br><br>
+
+		</div>
+		<br>
+		<p class="informacionConcurso">
+			Mandanos tu arte y podras entrar en el concurso para ganar grandes premios
+		</p>
+		<br>
+
+		<div class="contenedorFormulario">
+			<form id="formConcurso" onsubmit="">
+
+				<table id="tableConcurso">
+
+
+					<tr><td class="informacionFormulario">Nombre y apellidos*</td><td><input required title="Nombre y apellidos" name="nombre" type ="text" ></td></tr>
+
+					<tr><td class="informacionFormulario">NIF*</td><td><input required title="DNI" name= "DNI" type ="text"></td></tr>
+
+					<tr><td class="informacionFormulario" >Direccion*</td><td><input required title="Direccion" type ="text"  ></td></tr>
+
+					<tr><td class="informacionFormulario">Codigo postal*</td><td><input required title="Codigo Postal" name ="codigoPostal" type ="number"></td></tr>
+
+					<tr><td class="informacionFormulario">E-mail</td><td><input title="E-mail" name="email" type ="email"></td></tr>
+
+					<tr><td class ="informacionFormulario">Telefono</td><td><input title="Telefono" name ="telefono" type ="text"></td></tr>
+					<td>
+
+						<fieldset class="fieldsetEspecialiacion">
+							<legend>Tipo de especializacion</legend>
+							<br>
+							<input type = "radio" name ="especializacion" value ="Tatuajes"checked>Tatuajes<br>
+							<input type = "radio" name ="especializacion" value ="Piercing">Piercing<br>
+							<input type = "radio" name ="especializacion" value="Arte corporal">Arte corporal<br>
+						</fieldset>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br>
+						<h3>Sube tu foto aqui</h3>
+						<input type="file" name="pic" accept="image/*">
+						<br>
+						<br>
+						<input type="submit"value="Enviar informacion">
+					</td>
+				</tr>
+
+			</table>
+		</form>
+
+	</div>
+
+	<div id = "footer">
+		<div id = "footer_contents">
+			Contactenos
+			<br>
+			9965555-555
+
+		</div>
+
+
+	</div>
+
+</div>
+
+
+</body>
+</html>

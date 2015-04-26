@@ -157,10 +157,19 @@ text-align: center;
 	
 }
 
-.contenedorEjemplos { width:fill;
+.contenedorEjemplos { 
+	width:fill;
 	height: 400px;
 	width: 100%;
-	background-color: silver; }
+	background-color: silver;
+	}
+.columnaEjemplo{
+	background-color: red;
+	height: 100%;
+	width:250px;
+}
+
+
 .ltcol, .ctcol, .rtcol {height:100%; width: fill; margin: 10px; padding:10px; }
 .ltcol, .ctcol { float:left; }
 .rtcol { float:right; }
@@ -169,11 +178,7 @@ text-align: center;
 .ctcol  { background: blue}
 .rtcol { background: green}
 
-td{
-	background-color: red;
-	height: 100%;
-	width:250px;
-}
+
 
 .tituloEjemplo{
 	text-align: center;
@@ -199,7 +204,29 @@ td{
 
 
 }
-.contenedorEjemplos{
+.informacionConcurso
+{
+	font-size: 35px;
+	color: blue;
+	
+}
 
-	width: 100%;
+#tableConcurso{
+
+	width: 500px;
+	border: 1px solid black;
+	
+
+
+}
+.contenedorFormulario
+{
+	width: 500px;
+	padding: 10px;
+	background-color: lightblue;
+}
+
+.informacionFormulario{
+	border: 1px solid black;
+	
 }
