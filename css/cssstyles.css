@@ -230,3 +230,32 @@ text-align: center;
 	border: 1px solid black;
 	
 }
+
+.horario{
+width: 94px;
+height: 150px;
+background:#9cf;
+border: 1px solid black;
+display: none
+
+}
+#contenedorDatosHorario {
+    padding: 50px;
+    display: none;
+}
+#contenedorDatosHorario, #botonHorario {
+    padding: 5px;
+    text-align: center;
+    background-color: lightblue;
+    border: solid 1px #000033;
+    font-size: 200%;
+}
+
+.informacionConcurso{
+
+	color:lightblue;
+}
+
+ul {
+   list-style-position: inside;
+}

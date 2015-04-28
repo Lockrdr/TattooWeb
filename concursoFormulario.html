@@ -6,6 +6,8 @@
 
 <script type="text/javascript" src="lib/jquery-1.11.2.js"></script>
 
+
+
 <body>
 	
 	<div id = "contenedorPrincipal">
@@ -28,12 +30,12 @@
 		</div>
 		<br>
 		<p class="informacionConcurso">
-			Mandanos tu arte y podras entrar en el concurso para ganar grandes premios
+			Inscribete al concurso  y participa en el sorteo de un tatuaje gratis!
 		</p>
 		<br>
 
 		<div class="contenedorFormulario">
-			<form id="formConcurso" onsubmit="">
+			<form id="formConcurso" action="concurso.php" method="post">
 
 				<table id="tableConcurso">
 
@@ -51,8 +53,8 @@
 					<tr><td class ="informacionFormulario">Telefono</td><td><input title="Telefono" name ="telefono" type ="text"></td></tr>
 					<td>
 
-						<fieldset class="fieldsetEspecialiacion">
-							<legend>Tipo de especializacion</legend>
+						<fieldset class="fieldsetPreferencia">
+							<legend>Que te gustaria hacerte</legend>
 							<br>
 							<input type = "radio" name ="especializacion" value ="Tatuajes"checked>Tatuajes<br>
 							<input type = "radio" name ="especializacion" value ="Piercing">Piercing<br>
@@ -62,12 +64,11 @@
 				</tr>
 				<tr>
 					<td>
+						
 						<br>
-						<h3>Sube tu foto aqui</h3>
-						<input type="file" name="pic" accept="image/*">
-						<br>
-						<br>
-						<input type="submit"value="Enviar informacion">
+						
+						<input type="submit" value="Enviar informacion">
+						
 					</td>
 				</tr>
 

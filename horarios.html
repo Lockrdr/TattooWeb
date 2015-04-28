@@ -2,6 +2,17 @@
 <head>
 	<title>Octopus Ink</title>
 </head>
+
+<script type="text/javascript" src="lib/jquery-1.11.2.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#botonHorario").click(function(){
+        $("#contenedorDatosHorario").slideToggle("slow");
+    });
+});
+</script>
+
 <link rel="stylesheet" href="css/cssstyles.css">
 
 <script type="text/javascript" src="lib/jquery-1.11.2.js"></script>
@@ -27,12 +38,21 @@
 
 		</div>
 		<br>
-		
+					
 
-		<table>
-			
+		<div id="botonHorario">Pulsa para mostrar o ocultar el horario</div>
 
-		</table>
+		<div id="contenedorDatosHorario">
+
+		<ul>
+		  <li>Lunes-Viernes 8:00h - 22:30h </li>
+		  <li>Sabados: 9:00-16:00</li>
+		  <li>Domingos y Festivos Cerrado</li>
+		</ul>  
+
+
+
+		</div>
 
 		
 		<div id = "footer">
