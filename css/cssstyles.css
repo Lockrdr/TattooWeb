@@ -207,7 +207,8 @@ text-align: center;
 .informacionConcurso
 {
 	font-size: 35px;
-	color: blue;
+	color: lightblue;
+	text-align: center;
 	
 }
 
@@ -249,11 +250,6 @@ display: none
     background-color: lightblue;
     border: solid 1px #000033;
     font-size: 200%;
-}
-
-.informacionConcurso{
-
-	color:lightblue;
 }
 
 ul {
