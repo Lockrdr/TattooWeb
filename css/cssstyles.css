@@ -9,7 +9,12 @@
 }
 
 body{
+	/*
 	background: url(../img/bg.jpg) no-repeat center center fixed; 
+*/
+
+
+	background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -70,22 +75,19 @@ body{
 }
 
 
-body{
-
-  background-color: white
-}
-
+/*
 #ContenedorExterior{
   border:3px solid black;
   width:100%;
   height:660;
   background-color:#162EAE;
   margin: 0 auto;
-}
+}*/
 #TituloPrincipal{
   text-align: center;
    font-size: 250%;
    width:100%;
+
 
 
 
@@ -113,8 +115,8 @@ border:2px solid black;
 border:2px solid black;
 width: 100%;
 height: 50px;
-text-align: left;
-background-color:#485ED7; 
+text-align: center;
+background-color:#450909; /*red wine*/
 
 font-size: 300%;
 
@@ -127,16 +129,16 @@ font-size: 300%;
    font-size:20px
 }
 #footer{
-background-color:blue;
+background-color:silver;
  position:fixed;
    bottom:0;
    text-align: right;
-   color:white;
+   color:black;
    font-size: 300%;
 background-attachment: scroll;
 width: 100%;
  background-position: 0% 0%;
-height: 100px;
+height: 50px;
 bottom: 0pt;
 left: 0pt;
 }
@@ -149,10 +151,11 @@ left: 0pt;
 }
 #contenedorIntroduccion
 {
-	background-color:blue;
+	background-color:black;
 text-align: center;
 	color: white;
 	float: center;
+	font-size: 158%;
 	
 	
 }
@@ -162,9 +165,11 @@ text-align: center;
 	height: 400px;
 	width: 100%;
 	background-color: silver;
+	border-collapse: collapse;
+  border-width: 0px;
 	}
 .columnaEjemplo{
-	background-color: red;
+	background-color: #450909;
 	height: 100%;
 	width:250px;
 }
@@ -182,9 +187,11 @@ text-align: center;
 
 .tituloEjemplo{
 	text-align: center;
-	background-color: green;
+	background-color: black;
 	width:250px;
-	font-size: 55px
+	font-size: 55px;
+	color: #A38922 ; /*mostaza*/
+	border: none;
 
 
 }
@@ -207,7 +214,7 @@ text-align: center;
 .informacionConcurso
 {
 	font-size: 35px;
-	color: lightblue;
+	color: white;
 	text-align: center;
 	
 }
@@ -224,11 +231,12 @@ text-align: center;
 {
 	width: 500px;
 	padding: 10px;
-	background-color: lightblue;
+	background-color: #450909;
 }
 
 .informacionFormulario{
 	border: 1px solid black;
+	color:white;
 	
 }
 
@@ -247,11 +255,36 @@ display: none
 #contenedorDatosHorario, #botonHorario {
     padding: 5px;
     text-align: center;
-    background-color: lightblue;
+    background-color: #A38922;
     border: solid 1px #000033;
     font-size: 200%;
 }
 
 ul {
    list-style-position: inside;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+a:active {
+    color: #0000FF;
+}
+
+input
+{
+color: black;
+background: #fee3ad;
+border: 1px solid #781351;
+font-size: 115%;
+}
+
+.fieldsetPreferencia{
+
+	color: white;
 }
