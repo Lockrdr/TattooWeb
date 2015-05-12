@@ -19,7 +19,6 @@
 	$telefono =$_POST["telefono"];
 	$preferencia =$_POST["preferencia"];
 
-
 	
 	fwrite($fh,"\n" . "DNI: " . $dni . "\n");
 	fwrite($fh,"Nombre y apellidos: "  . $nombreYapellido . "\n");

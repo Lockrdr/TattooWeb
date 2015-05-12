@@ -12,7 +12,7 @@ $(window).load(function(){
 		var timeoutID;
 		var buttonClicked=0;
 
-		var handler1=function(){
+		var buttonHandler=function(){
 			buttonClicked=1;
 			$('#slideShowContainer .button').unbind('click');
 			currentPage= pages.eq(current);
@@ -30,7 +30,7 @@ $(window).load(function(){
 					currentPage.hide();
 				});
 				currentPage.animate({ marginLeft: 604 }, 800,function(){
-					$('#slideShowContainer .button').bind('click',handler1);
+					$('#slideShowContainer .button').bind('click',buttonHandler);
 				});
 			}
 			else
@@ -48,12 +48,12 @@ $(window).load(function(){
 				});
 				currentPage.animate({ marginLeft: -604 }, 800,function(){
 					currentPage.hide();
-					$('#slideShowContainer .button').bind('click',handler1);
+					$('#slideShowContainer .button').bind('click',buttonHandler);
 				});
 			}		
 		}
 
-		var handler2=function(){
+		var autoSlideHandle=function(){
 			if (buttonClicked==0)
 			{
 			$('#slideShowContainer .button').unbind('click');
@@ -69,21 +69,21 @@ $(window).load(function(){
 			});
 			currentPage.animate({ marginLeft: -604 }, 800,function(){
 				currentPage.hide();
-				$('#slideShowContainer .button').bind('click',handler1);
+				$('#slideShowContainer .button').bind('click',buttonHandler);
 			});
 			timeoutID=setTimeout(function(){
-				handler2();	
+				autoSlideHandle();	
 			}, 4000);
 			}
 		}
 
 		$('#slideShowContainer .button').click(function(){
 			clearTimeout(timeoutID);
-			handler1();
+			buttonHandler();
 		});
 
 		timeoutID=setTimeout(function(){
-			handler2();	
+			autoSlideHandle();	
 			}, 4000);
 		
 });
@@ -93,48 +93,33 @@ $(window).load(function(){
 	
 	<div id = "contenedorPrincipal">
 
-
-	<div id = "marcoSuperior">
-
+		<div id = "marcoSuperior">
 			<h1 id ="TituloPrincipal">Octopus Ink</h1>
-
 		</div>
-		<div id ="ContenedorDeSecciones">
-						
+
+		<div id ="ContenedorDeSecciones">		
 			<a href="index.html"> Home</a>
-			
 			<a href="horarios.html"> Horarios</a>
-			
 			<a href="concursoFormulario.html"> Inscribirse a concurso</a>
 			<br><br>
-
 		</div>
 		<br>
-		
-
 
 		<div id="contenedorIntroduccion">
 		<h1>Octopus Ink</h1>
 		<p>En Octopus Ink encontraras todo lo que necesites sobre tatuajes y arte corporal</p>
-			
 		</div>
+
 		<center>
 		<div id="slideShowContainer">
 			<ul>
 				<li><img src="img/back_tattoo.jpg" width="604" height="453" /></li>
 				<li><img src="img/lion-half-sleeve-tattoo.jpg" width="604" height="453" /></li>
-
 			</ul>
 			<span class="button prevButton"></span>
 			<span class="button nextButton"></span>
-
-
 		</div> 
-		</center> 
-
-		
-
-
+		</center>
 
   		<table class="contenedorEjemplos">
 			  <tr>
@@ -143,43 +128,27 @@ $(window).load(function(){
 			    <td class="tituloEjemplo">Arte Corporal</td>
 			  </tr>
 			  <tr> 
-
 			    <td class="columnaEjemplo"><p class="parrafoEjemplo">Escoja uno de nuestro disenos o le ayudamos a disenar su propio tatuaje</p>
 			    	<br>
 			    	<img class= "imagenEjemplo" src="img/tatuajeLeg.jpg"></img>
-
-			    </td> 
-
-
-				 <td class="columnaEjemplo"><p class="parrafoEjemplo">Todas las perforaciones realizadas se hacen bajo el mas estricto control sanitario </p>
+			    </td>
+				<td class="columnaEjemplo"><p class="parrafoEjemplo">Todas las perforaciones realizadas se hacen bajo el mas estricto control sanitario </p>
 				    	<br>
 				    	<img class= "imagenEjemplo" src="img/piercing.jpg"></img>
-
 			    </td>
-
-
 			    <td class="columnaEjemplo"><p class="parrafoEjemplo">Galardonados como mejores artistas de arte corporal del 2012, en Octopus Ink atendemos a los mas exigentes artistas y clientes</p>
 			    	<br>
 			    	<img class= "imagenEjemplo" src="img/arteCorporal.jpg"></img>
-
 			    </td>
 			  </tr>
 		</table>
 
-		
-		
 		<div id = "footer">
 			<div id = "footer_contents">
 				Contactenos	
-			9965555-555
-
+				9965555-555
 			</div>
-			
-
 		</div>
-
 	</div>
-
-
 </body>
 </html>

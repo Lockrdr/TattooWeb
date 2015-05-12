@@ -1,163 +1,144 @@
 @font-face {
-    font-family: tattooFont;
-    src: url(../fonts/tattooFont.ttf);
+font-family: tattooFont;
+src: url(../fonts/tattooFont.ttf);
 }
 
 *{
-	margin:0;
-	padding:0;
+margin:0;
+padding:0;
 }
-
 body{
-	/*
-	background: url(../img/bg.jpg) no-repeat center center fixed; 
-*/
 
-
-	background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+background-color: black;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 #slideShowContainer{
-	width:604px;
-	position:relative;
+width:604px;
+position:relative;
 
 }
 
 #slideShowContainer .prevButton{
-	height:72px;
-	width:68px;
-	position:absolute;
-	background:url('../img/buttons.png') no-repeat;
-	top:50%;
-	margin-top:-36px;
-	cursor:pointer;
-	z-index:2000;
-	background-position:left top;
-	left:0
+height:72px;
+width:68px;
+position:absolute;
+background:url('../img/buttons.png') no-repeat;
+top:50%;
+margin-top:-36px;
+cursor:pointer;
+z-index:2000;
+background-position:left top;
+left:0
 }
 
 #slideShowContainer .prevButton:hover{ background-position:left bottom;left:0;}
 
 #slideShowContainer .nextButton{
-	height:72px;
-	width:68px;
-	position:absolute;
-	background:url('../img/buttons.png') no-repeat;
-	top:50%;
-	margin-top:-36px;
-	cursor:pointer;
-	z-index:2000;
-	background-position:right top;
-	right:0
+height:72px;
+width:68px;
+position:absolute;
+background:url('../img/buttons.png') no-repeat;
+top:50%;
+margin-top:-36px;
+cursor:pointer;
+z-index:2000;
+background-position:right top;
+right:0
 }
 
 #slideShowContainer .nextButton:hover{background-position:right bottom;right:0;}
 
 #slideShowContainer ul{
-	width:604px;
-	height:453px;
-	list-style:none outside none;
-	position:relative;
-	overflow:hidden;
+width:604px;
+height:453px;
+list-style:none outside none;
+position:relative;
+overflow:hidden;
 }
 
 #slideShowContainer li:first-child{
-	display:list-item;
-	position:absolute;
+display:list-item;
+position:absolute;
 }
 
 #slideShowContainer li{
-	position:absolute;
-	display:none;
+position:absolute;
+display:none;
 }
 
 
-/*
-#ContenedorExterior{
-  border:3px solid black;
-  width:100%;
-  height:660;
-  background-color:#162EAE;
-  margin: 0 auto;
-}*/
 #TituloPrincipal{
-  text-align: center;
-   font-size: 250%;
-   width:100%;
-
-
-
-
+	text-align: center;
+	font-size: 250%;
+	width:100%;
 }
 
 #contenedorPrincipal {
- min-height:100%;
-   position:relative;
-   width: 800px;
-  margin: 0 auto;
-
-
+min-height:100%;
+position:relative;
+width: 800px;
+margin: 0 auto;
 
 }
+
 #marcoSuperior{
-border:2px solid black;
+	border:2px solid black;
 
- background-color:silver;
- width:100%;
-  font-family: tattooFont;
-  font-size: 200%;
-
+	background-color:silver;
+	width:100%;
+	font-family: tattooFont;
+	font-size: 200%;
 }
+
 #ContenedorDeSecciones{
-border:2px solid black;
-width: 100%;
-height: 50px;
-text-align: center;
-background-color:#450909; /*red wine*/
-
-font-size: 300%;
-
+	border:2px solid black;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color:#450909; /*color vino tinto*/
+	font-size: 300%;
 
 }
 #ContenedorTexto{
 
-  color: #FFFFFF;
-   background-color:#001457;
-   font-size:20px
+	color: #FFFFFF;
+	background-color:#001457;
+	font-size:20px
 }
+
 #footer{
-background-color:silver;
- position:fixed;
-   bottom:0;
-   text-align: right;
-   color:black;
-   font-size: 300%;
-background-attachment: scroll;
-width: 100%;
- background-position: 0% 0%;
-height: 50px;
-bottom: 0pt;
-left: 0pt;
+	background-color:silver;
+	position:fixed;
+	bottom:0;
+	text-align: right;
+	color:black;
+	font-size: 300%;
+	background-attachment: scroll;
+	width: 100%;
+	background-position: 0% 0%;
+	height: 50px;
+	bottom: 0pt;
+	left: 0pt;
 }
 
 #footer_contents{
 
- 		height:24px; // Replace with the height your footer should be
-        width: 100%; // Visible width of footer
-        margin:auto;
+	height:24px;
+	width: 100%;
+	margin:auto;
 }
+
 #contenedorIntroduccion
 {
 	background-color:black;
-text-align: center;
+	text-align: center;
 	color: white;
 	float: center;
 	font-size: 158%;
-	
-	
+
 }
 
 .contenedorEjemplos { 
@@ -166,8 +147,8 @@ text-align: center;
 	width: 100%;
 	background-color: silver;
 	border-collapse: collapse;
-  border-width: 0px;
-	}
+	border-width: 0px;
+}
 .columnaEjemplo{
 	background-color: #450909;
 	height: 100%;
@@ -193,40 +174,36 @@ text-align: center;
 	color: #A38922 ; /*mostaza*/
 	border: none;
 
-
 }
+
 .imagenEjemplo
 {
 	max-height:600px;
 	max-width: 200px;
 	min-height: 300px;
-
 	padding: 50px;
 }
+
 .parrafoEjemplo{
 
 	font-size: 20px;
-
 	color:silver;
-
-
 }
+
 .informacionConcurso
 {
 	font-size: 35px;
 	color: white;
 	text-align: center;
-	
+
 }
 
 #tableConcurso{
 
 	width: 500px;
 	border: 1px solid black;
-	
-
-
 }
+
 .contenedorFormulario
 {
 	width: 500px;
@@ -237,51 +214,58 @@ text-align: center;
 .informacionFormulario{
 	border: 1px solid black;
 	color:white;
-	
+
 }
 
 .horario{
-width: 94px;
-height: 150px;
-background:#9cf;
-border: 1px solid black;
-display: none
+	width: 94px;
+	height: 150px;
+	background:#9cf;
+	border: 1px solid black;
+	display: none
 
 }
 #contenedorDatosHorario {
-    padding: 50px;
-    display: none;
+
+	display: none;
+	padding: 5px;
+	text-align: center;
+	background-color: #A38922;
+	border: solid 1px #000033;
+	font-size: 200%;
+
 }
-#contenedorDatosHorario, #botonHorario {
-    padding: 5px;
-    text-align: center;
-    background-color: #A38922;
-    border: solid 1px #000033;
-    font-size: 200%;
+
+#botonHorario {
+	cursor: pointer;
+	padding: 5px;
+	text-align: center;
+	background-color: #A38922;
+	border: solid 1px #000033;
+	font-size: 200%;
 }
 
 ul {
-   list-style-position: inside;
+	list-style-position: inside;
 }
 
 a:link {
-    color: white;
+	color: white;
 }
 
-/* visited link */
 a:visited {
-    color: grey;
+	color: grey;
 }
 a:active {
-    color: #0000FF;
+	color: #0000FF;
 }
 
 input
 {
-color: black;
-background: #fee3ad;
-border: 1px solid #781351;
-font-size: 115%;
+	color: black;
+	background: #fee3ad;
+	border: 1px solid #781351;
+	font-size: 115%;
 }
 
 .fieldsetPreferencia{

@@ -1,4 +1,3 @@
-
 DNI: 02310276
 Nombre y apellidos: Ricardo
 direccion jalon
@@ -7,10 +6,10 @@ email: miemail@uc.es
 telefono: 
 preferencia: Piercing
 
-DNI: 123123123k
-Nombre y apellidos: luis
-direccion otracas
-codigoPostal: 123123
-email: 
-telefono: 023123
-preferencia: Tatuajes
+DNI: 2130134F
+Nombre y apellidos: Luis
+direccion Quevedo 2
+codigoPostal: 21244
+email: miil@hotmail.es
+telefono: 123333
+preferencia: Piercing
